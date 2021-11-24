@@ -2,7 +2,6 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Login from './components/login/Login';
 import Register from './components/login/Register';
-import Header from './components/Header';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Experiences from './components/Resume';
@@ -15,8 +14,7 @@ function App() {
   return (
       <Router>
         <div className="App">
-          <Header />  
-          <Navbar />
+          
             <Switch>
               <Route path="/" exact>
                 <Register />
@@ -28,6 +26,7 @@ function App() {
                 <Register />
               </Route>
               <Route path="/home">
+                <Navbar />
                 <About />
                 <Experiences />
                 <Services />

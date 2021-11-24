@@ -17,12 +17,6 @@ function Footer() {
                 
                 <p>Copyright© 2021 | All rights reserved.</p>
             </div>
-            <div className="footer-right">
-                    <a className="btn-footer" href="#aboutId" alt="menu">About</a>
-                    <a className="btn-footer" href="#experiencesId" alt="menu">Experiences</a>
-                    <a className="btn-footer" href="#servicesId" alt="menu">Services</a>
-                    <a className="btn-footer" href="#contactId" alt="menu">Contacts</a>
-            </div>
         </div>
     )
 }

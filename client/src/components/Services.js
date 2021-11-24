@@ -2,11 +2,14 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <div className="services">
+        <div id="servicesId"className="services">
             <h3>Services</h3>
-            <img src="/musculation.jpg" alt="fitness-woman"/>
-            <img src="/nutrition.jpg" alt="nutrition"/>
-            <img src="/butterfly.jpg" alt="swimmer"/>
+            <div className="carrousel">
+                <img src="/nutrition.jpg" alt="nutrition" width="35%"/>
+                <img src="/musculation.jpg" alt="fitness-woman" width="25%"/>
+
+                <img src="/diving.jpg" alt="swimmer" width="36%"/>
+            </div>
         </div>
     )
 }
