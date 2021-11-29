@@ -1,16 +1,15 @@
 import React from 'react';
+import MyCarousel from './Carousel';
 
 const Services = () => {
+
     return (
         <div id="servicesId"className="services">
-            <h3>Services</h3>
-            <div className="carrousel">
-                <img src="/nutrition.jpg" alt="nutrition" width="35%"/>
-                <img src="/musculation.jpg" alt="fitness-woman" width="25%"/>
+            <h3>----- Services -----</h3><br/>
 
-                <img src="/diving.jpg" alt="swimmer" width="36%"/>
-            </div>
+                <MyCarousel />
         </div>
+        
     )
 }
 

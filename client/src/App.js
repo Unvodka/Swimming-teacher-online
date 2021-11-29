@@ -30,6 +30,7 @@ function App() {
                 <About />
                 <Experiences />
                 <Services />
+                
                 <Contact />
               </Route>
             </Switch>

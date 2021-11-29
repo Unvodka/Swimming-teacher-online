@@ -24,7 +24,7 @@ const Login = () => {
             localStorage.setItem('firstLogin', true)
             localStorage.setItem('accessToken', res.data.accesstoken)
 
-            window.location.href = "/envelopes";
+            window.location.href = "/home";
         } catch (err) {
             alert(err.response.data.msg)
         }
@@ -48,7 +48,7 @@ const Login = () => {
                 <Link to="/register">Register</Link>
           </fieldset>
         </form>
-        <img src="/swimmer.jpg" alt="swimmer" />
+        <img className="login-register" src="/swimmer.jpg" alt="swimmer" />
     </div>
   )
 }

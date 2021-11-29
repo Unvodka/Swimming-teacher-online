@@ -18,6 +18,16 @@ a {
   text-decoration: none;
   color: #212529;
 }
+p {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+
 body {
   background-color: #212529;
   text-align: center;
@@ -34,9 +44,7 @@ body {
   justify-content: center;
   opacity: 0.9;
 } */
-.header p {
-  opacity: 0.6;
-}
+
 nav {
   display: flex;
   max-width: 100%;
@@ -72,7 +80,7 @@ nav a.nav-link {
   display: flex;
   flex-direction: row;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.25rem;
   cursor: pointer;
   letter-spacing: 0.35rem;
   text-decoration: none;
@@ -99,8 +107,7 @@ nav ul li {
 .description {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
   line-height: 25px;
   font-size: 18px;
 }
@@ -126,7 +133,7 @@ nav ul li {
   align-items: center;
 }
 .img-profil img {
-  margin: 4%;
+  margin: 2.5%;
   border: 2px solid wheat;
 }
 
@@ -138,6 +145,7 @@ nav ul li {
 }
 .experiences a {
   color: wheat;
+  font-size: 1.25rem;
 }
 
 .services h3 {
@@ -147,18 +155,33 @@ nav ul li {
 .services img {
   border: 2px solid wheat;
 }
-.carrousel {
+.carousel-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  overflow: hidden;
+  width: 644px;
+  height: 644px;
+  margin: auto;
+}
+.carousel .slide .legend {
+  font-size: 18px;
+}
+.carousel-img {
+  border: 2px solid wheat;
+}
+.legend {
+  font-size: larger;
+  font-weight: bolder;
+  letter-spacing: 0.20rem;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 45vh;
   width: 40%;
-  margin-top: 4%;
+  margin-top: 1%;
   margin-left: 30%;
   margin-bottom: 5rem;
   border: 1px solid wheat;
@@ -202,11 +225,108 @@ nav ul li {
   color: wheat;
   margin: 0.25rem;
 }
-.footer-right {
-  display: flex;
-  flex-direction: column;
-}
 
 #not-mail {
   display: none;
+}
+
+@media screen and (max-width: 699px) {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .login-register {
+    max-width: 80%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 16px;
+  }
+  
+  .nav {
+    line-height: 15spx;
+  }
+  .navbar {
+    width: 380px;
+    height: 10rem;
+  }
+  nav ul {
+    width: 80%;
+    flex-direction: column;
+  }
+  nav ul li {
+    right: auto;
+    font-size: 16px;
+    margin: 5px;
+    padding: 0;
+  }
+  nav a.nav-link {
+    letter-spacing: 0.15rem;
+    font-size: 0.75rem;
+    margin: auto;
+  }
+  
+  .img-profil {
+    flex-direction: column;
+  }
+  .img-profil img {
+    width: 90%;
+  }
+  
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .carousel .slide .legend {
+    font-size: 14px;
+  }
+  .legend {
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+  }
+  .contact {
+    width: 80%;
+    margin: 2rem;
+  }
+  .footer {
+    height: 13rem;
+    flex-direction: column;
+  }
+  .experiences, .services, .contact, .footer {
+    margin-top: 4rem;
+  }
+  
+}
+
+@media screen and (max-width: 1399px) {
+  nav ul li {
+    right: auto;
+    font-size: 16px;
+    margin: 20px;
+    padding: 0;
+  }
+  nav a.nav-link {
+    letter-spacing: 0.15rem;
+    font-size: 0.75rem;
+    margin: auto;
+  }
+  
+  .img-profil img {
+    width: 20%;
+  }
+  .contact {
+    height: 37vh;
+  }
 }

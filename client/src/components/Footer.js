@@ -3,7 +3,8 @@ import React from 'react';
 function Footer() {
     return (
         <div className="footer">
-            <div className="footer-left">           
+            <div className="footer-left">   
+            <br/>        
                     <p>Contact :</p>
                     <p>Arnaud Chevallier, Antibes, France</p>
                 

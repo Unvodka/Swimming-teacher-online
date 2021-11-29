@@ -50,7 +50,7 @@ const Register = () => {
 
           </fieldset>
         </form>
-        <img src="/swimmer.jpg" alt="swimmer" />
+        <img className="login-register" src="/swimmer.jpg" alt="swimmer" />
     </div>
     )
 }
