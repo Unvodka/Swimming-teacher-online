@@ -8,7 +8,7 @@ import Experiences from './components/Resume';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import './App.css'
+import './App.css';
 
 function App() {
   return (
@@ -30,8 +30,8 @@ function App() {
                 <About />
                 <Experiences />
                 <Services />
-                
                 <Contact />
+                <p className="contactP">If you prefer, you can contact me by phone directly (see below) </p>
               </Route>
             </Switch>
           <Footer />

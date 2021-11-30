@@ -143,7 +143,7 @@ const ContactMe = () => {
       <input
         className="button"
         type="button"
-        value="Send"
+        value="Send ..."
         onClick={handleSubmit}
       />
       <div className="form-message"></div>

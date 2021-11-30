@@ -7,27 +7,27 @@ class MyCarousel extends Component {
         return (
             <Carousel className="carousel-container">
                 <div className="carousel-img">
-                    <img src="/nutrition.jpg" />
+                    <img src="/nutrition.jpg" alt="vegetables"/>
                     <p className="legend">Nutrition</p>
                 </div>
                 <div className="carousel-img">
-                    <img src="/butterfly.jpg" />
+                    <img src="/butterfly.jpg" alt="swimmer" />
                     <p className="legend">Swimming</p>
                 </div>
                 <div className="carousel-img">
-                    <img src="/training2.jpg" />
+                    <img src="/training2.jpg" alt="body sculpt"/>
                     <p className="legend">Body Scultp</p>
                 </div>
                 <div className="carousel-img">
-                    <img src="/diving.jpg" />
+                    <img src="/diving.jpg" alt="swimmer" />
                     <p className="legend">Diving</p>
                 </div>
                 <div className="carousel-img">
-                    <img src="/meditation2.jpg" />
+                    <img src="/meditation2.jpg" alt="meditation" />
                     <p className="legend">Mental</p>
                 </div>
                 <div className="carousel-img">
-                    <img src="/relaxation3.jpg"/>
+                    <img src="/relaxation3.jpg" alt="relaxation"/>
                     <p className="legend">Relaxation</p>
                 </div>
                 

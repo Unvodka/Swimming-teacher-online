@@ -1,6 +1,29 @@
-import React from 'react'
+import React from 'react';
+import ScrollReveal from 'scrollreveal';
+
 
 const Experiences = () => {
+
+    ScrollReveal().reveal('p', {
+        duration: 1000,
+        distance: "20px",
+        reset: true,
+        delay: 900
+      })
+
+      ScrollReveal().reveal('h3', {
+        duration: 1000,
+        distance: "0px",
+        scale: 0.5,
+        reset: true
+      })
+      ScrollReveal().reveal('h4', {
+        duration: 1000,
+        distance: "0px",
+        scale: 0.5,
+        reset: true
+      })
+
     return ( 
         <div id="experiencesId" className="experiences">
            
