@@ -36,15 +36,15 @@ const Register = () => {
                 </div>
                 <div>
                   <label htmlFor="email">Email</label>
-                  <input type="email" id="email" name="email" value={user.email} onChange={onChangeInput} placeholder="Enter email" required></input>
+                  <i class="far fa-envelope"></i><input type="email" id="email" name="email" value={user.email} onChange={onChangeInput} placeholder="Enter email" required></input>
                 </div>
                 <div>
                   <label htmlFor="password">Password</label>
-                  <input type="password" id="password" name="password" value={user.password} onChange={onChangeInput} placeholder="Password" required></input>
+                  <i class="fas fa-key"></i><input type="password" id="password" name="password" value={user.password} onChange={onChangeInput} placeholder="Password" required></input>
                 </div>
                 <button className="btn-form">Register</button>
-                <br/>
-
+                
+                <p>or</p>
               
                 <Link to="/login"><button className="btn-form" type="submit">Login</button></Link>
 

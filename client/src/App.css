@@ -3,6 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+.App {
+  overflow: hidden;
+}
+p {
+  font-size: larger;
+}
+h2 {
+  font-family: 'Architects Daughter', cursive;
+}
+h3 {
+  margin-bottom: 3%;
+  font-size: larger;
+}
+h4 {
+  color: wheat;
+}
 
 .login {
   width: 35%;
@@ -10,26 +26,31 @@
   flex-direction: column;
   padding: 1rem;
   margin: 1rem auto;
+  font-size: larger;
+}
+.btn-form {
+  align-items: center;
+  margin: 1rem auto;
+  width: 50%;
+  height: 2rem;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bolder;
+}
+.btn-form:hover {
+  color: white;
+  background-color: black;
 }
 .login div, label, input {
-  margin: 0.25rem;
+  margin: 0.5rem;
+  height: 1.5rem;
 }
 a {
   text-decoration: none;
   color: #212529;
 }
-p {
-  font-size: 1.25rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-h4 {
-  font-size: 1.25rem;
-}
 
 body {
-  background-color: #212529;
+  background-color: #28384d;
   text-align: center;
   color: wheat;
 }
@@ -40,7 +61,7 @@ nav {
   height: 6rem;
   z-index: 2;
   line-height: 25px;
-  opacity: 0.9;
+  opacity: 1;
 }
 .nav .container {
   width: 100%;
@@ -78,11 +99,11 @@ nav a.nav-link {
 .nav-item > a {
   color: wheat !important;
   border-top: 0.18rem solid rgb(24, 24, 24);
-  transition: 0.3s ease-in;
+  transition: 0.1s ease-in;
 }
 
 .nav-item > a:hover {
-  border-top: 0.18rem solid rgb(115, 115, 243);
+  border-top: 0.18rem solid rgb(94, 94, 209);
   transform: scale(1.1);
 }
 
@@ -100,22 +121,28 @@ nav ul li {
   width: 100%;
   line-height: 25px;
   font-size: 18px;
+  border-top: 1px solid wheat;
 }
 .description p {
   width: 70%;
   text-align: center;
   margin-left: 15%;
+  line-height: 50px;
 }
 .description h2 {
   margin-top: 3.5%;
-  font-weight: lighter;
-  opacity: 0.9;
-  text-decoration: underline;
+  margin-bottom: 2.5%;
   color: wheat;
 }
-.description h3{
- margin-top: 3.5%;
- margin-bottom: 3.5%;
+.description h4 {
+  margin-top: 2%;
+  color: rgb(196, 194, 194);
+  transition: 0.1s ease-in-out;
+}
+.description h4:hover {
+  margin-top: 2%;
+  color: wheat;
+  transform: scale(1.1);
 }
 .img-profil {
   display: flex;
@@ -127,20 +154,31 @@ nav ul li {
   border: 2px solid wheat;
 }
 
+.experiences {
+  margin-top: 3.5%;
+  width: 80%;
+  margin-left: 10%;
+}
 .experiences p {
   margin: 1rem;
+  font-size: 21px;
+  line-height: 35px;
 }
-.experiences h3 {
-  margin-bottom: 3.5%;
+.experiences h2 {
+  margin-bottom: 2.5%;
 }
 .experiences a {
   color: wheat;
   font-size: 1.25rem;
 }
 
-.services h3 {
+.services {
+  width: 80%;
+  margin-left: 10%;
+}
+.services h2 {
   margin-top: 3.5%;
-  margin-bottom: 3.5%;
+  margin-bottom: 2.5%;
 }
 .services img {
   border: 2px solid wheat;
@@ -157,7 +195,10 @@ nav ul li {
 .carousel .slide .legend {
   font-size: 20px;
   opacity: 0.5;
-
+}
+.carousel.carousel-slider .control-arrow {
+  width: 5rem;
+  opacity: 0.9;
 }
 .carousel-img {
   border: 2px solid wheat;
@@ -171,7 +212,7 @@ nav ul li {
 .contact {
   display: flex;
   flex-direction: column;
-  height: 45vh;
+  height: 50vh;
   width: 40%;
   margin-top: 1%;
   margin-left: 30%;
@@ -179,46 +220,62 @@ nav ul li {
   border: 1px solid wheat;
 }
 .contact input {
+  background-color: rgb(250, 232, 200);
   height: 2rem;
+  border-radius: 3px;
 }
-.contact h3 {
+#email {
+  width: 60%;
+}
+.contact h2 {
   margin-top: 3.5%;
-  margin-bottom: 3.5%;
+  margin-bottom: 2.5%;
 }
 .contact textarea {
   height: 5rem;
   width: 70%;
+  border-radius: 3px;
+  background-color: rgb(250, 232, 200);
+  padding-top: 1rem;
 }
 .contact .button {
   margin-top: 2rem;
-  margin-left: 25%;
-  margin-bottom: 4%;
-  width: 50%;
+  margin-left: 30%;
+  margin-bottom: 2%;
+  width: 40%;
+  height: 3rem;
   cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 .contact .button:hover {
   background-color: black;
   color: wheat;
+  border: 2px solid wheat;
+
 }
 .contactP {
   margin-bottom: 2rem;
+  margin-left: 10%;
+  width: 80%;
 }
 
 .footer {
   background-color: rgb(24, 24, 24);
   color: wheat;
-  height: 10rem;
+  height: 12rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   opacity: 0.9;
+  border-top: 1px solid wheat;
+  line-height: 35px;
 }
 .footer-center p {
   margin: 1rem;
 }
 .footer a {
   color: wheat;
-  margin: 0.25rem;
 }
 
 textarea {
@@ -240,7 +297,7 @@ input, textarea {
   display: none;
 }
 
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1199px) {
   nav ul li {
     right: auto;
     font-size: 16px;
@@ -315,8 +372,8 @@ input, textarea {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 320px;
     margin: auto;
   }
   .carousel .slide .legend {
@@ -329,15 +386,39 @@ input, textarea {
   }
   .contact {
     width: 80%;
-    margin: 2rem;
+    height: 60vh;
+    margin-left: 10%;
+  }
+  .contact input, .contact .button {
+    margin: 0.75rem;
+  }
+  .contact .button {
+    margin-left: 30%;
   }
   .footer {
     height: 13rem;
     flex-direction: column;
+    line-height: 20px;
   }
   .experiences, .services, .contact, .footer {
     margin-top: 4rem;
   }
-  
+}
+
+@media screen and (max-width: 329px) {
+  .carousel-container {
+    width: 100%;
+  }
+  .experiences {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contact {
+    margin-top: 0;
+    height: 70vh;
+  }
+  .contact h2 {
+    margin-top: 1rem;
+  }
 }
 

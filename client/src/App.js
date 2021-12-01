@@ -9,6 +9,27 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
+import ScrollReveal from 'scrollreveal';
+
+
+ScrollReveal().reveal('.description p', {
+  duration: 2000,
+  distance: "600px",
+  origin: 'right',
+  reset: true,
+})
+
+ScrollReveal().reveal('.description h2', {
+  duration: 1000,
+  distance: "10px",
+  reset: true
+})
+
+ScrollReveal().reveal('.description h3', {
+    duration: 1000,
+    distance: "10px",
+    reset: true
+  })
 
 function App() {
   return (

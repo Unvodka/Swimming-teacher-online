@@ -93,7 +93,7 @@ const ContactMe = () => {
 
   return (
     <form id="contactId"className="contact">
-      <h3>----- Contact -----</h3><br/>
+      <h2>- - - - -  Contact  - - - - -</h2><br/>
       <div className="form-content">
         <input
           type="text"

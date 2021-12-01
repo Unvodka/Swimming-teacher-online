@@ -5,7 +5,7 @@ const Services = () => {
 
     return (
         <div id="servicesId"className="services">
-            <h3>----- Services -----</h3><br/>
+            <h2>- - - - -  Services  - - - - -</h2><br/>
 
                 <MyCarousel />
         </div>

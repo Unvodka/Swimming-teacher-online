@@ -38,14 +38,15 @@ const Login = () => {
 
                 <div className="form-group">
                   <label htmlFor="exampleInputEmail1" className="form-label mt-4">Email address</label>
+                  <i class="far fa-envelope"></i>
                   <input type="email" name="email" value={user.email} onChange={onChangeInput} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ></input>
                 </div>
                 <div className="form-group">
                   <label htmlFor="exampleInputPassword1" className="form-label mt-4">Password</label>
-                  <input type="password" name="password" value={user.password} onChange={onChangeInput} className="form-control" id="exampleInputPassword1" placeholder="Password" ></input>
+                  <i class="fas fa-key"></i><input type="password" name="password" value={user.password} onChange={onChangeInput} className="form-control" id="exampleInputPassword1" placeholder="Password" ></input>
                 </div>
                 <button className="btn-form" type="submit">Login</button>
-                <Link to="/register">Register</Link>
+                <Link to="/register"><button className="btn-form">Register</button></Link>
           </fieldset>
         </form>
         <img className="login-register" src="/swimmer.jpg" alt="swimmer" />
