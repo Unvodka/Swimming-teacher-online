@@ -147,6 +147,7 @@ const ContactMe = () => {
         onClick={handleSubmit}
       />
       <div className="form-message"></div>
+      <p className="contactP">If you prefer, you can contact me by phone directly (see below) </p>
     </form>
   );
 };

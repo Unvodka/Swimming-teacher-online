@@ -3,9 +3,8 @@ import React from 'react';
 function Footer() {
     return (
         <div className="footer">
-            <div className="footer-left">   
-            <br/>        
-                    <p>Contact : Arnaud Chevallier :</p>
+            <div className="footer-left">       
+                <p>Contact : Arnaud Chevallier :</p>
             <p><i class="fas fa-map-marker-alt"> </i> Antibes, France</p>
                 
             <p> <i class="fas fa-phone-square"></i> +33 07 49 48 62 03</p>

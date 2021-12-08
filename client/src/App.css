@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html .sr .description {
+  visibility: hidden;
+}
 .App {
   overflow: hidden;
 }
@@ -26,7 +29,6 @@ h4 {
   flex-direction: column;
   padding: 1rem;
   margin: 1rem auto;
-  font-size: larger;
 }
 .btn-form {
   align-items: center;
@@ -42,7 +44,8 @@ h4 {
 }
 .login div, label, input {
   margin: 0.5rem;
-  height: 1.5rem;
+  height: 2rem;
+  font-size: larger;
 }
 a {
   text-decoration: none;
@@ -56,8 +59,9 @@ body {
 }
 
 nav {
+  position: fixed;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   height: 6rem;
   z-index: 2;
   line-height: 25px;
@@ -104,7 +108,7 @@ nav a.nav-link {
 
 .nav-item > a:hover {
   border-top: 0.18rem solid rgb(94, 94, 209);
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 nav ul li {
@@ -122,6 +126,7 @@ nav ul li {
   line-height: 25px;
   font-size: 18px;
   border-top: 1px solid wheat;
+  margin-top: 6rem;
 }
 .description p {
   width: 70%;
@@ -148,6 +153,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 3s ease-in;
 }
 .img-profil img {
   margin: 2.5%;
@@ -158,6 +164,7 @@ nav ul li {
   margin-top: 3.5%;
   width: 80%;
   margin-left: 10%;
+  transition: 1s ease-in;
 }
 .experiences p {
   margin: 1rem;
@@ -175,6 +182,8 @@ nav ul li {
 .services {
   width: 80%;
   margin-left: 10%;
+  height: 80vh;
+  margin-top: 6%;
 }
 .services h2 {
   margin-top: 3.5%;
@@ -212,7 +221,7 @@ nav ul li {
 .contact {
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: 60vh;
   width: 40%;
   margin-top: 1%;
   margin-left: 30%;
@@ -239,9 +248,7 @@ nav ul li {
   padding-top: 1rem;
 }
 .contact .button {
-  margin-top: 2rem;
-  margin-left: 30%;
-  margin-bottom: 2%;
+  margin: 4% auto;
   width: 40%;
   height: 3rem;
   cursor: pointer;
@@ -290,7 +297,7 @@ input, textarea {
   transition: .2s ease-in-out
 }
 .contact .button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #not-mail {
@@ -298,73 +305,68 @@ input, textarea {
 }
 
 @media screen and (max-width: 1199px) {
+  
+  .img-profil {
+    flex-direction: column;
+  }
+  .img-profil img {
+    width: 50%;
+  }
+  .img-profil .profil {
+    width: 30%;
+  }
+  .services {
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+  }
+  .contact {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 999px) {
   nav ul li {
     right: auto;
     font-size: 16px;
     margin: 20px;
     padding: 0;
   }
-  nav a.nav-link {
-    letter-spacing: 0.15rem;
-    font-size: 0.75rem;
-    margin: auto;
-  }
-  
-  .img-profil img {
-    width: 20%;
-  }
-  .contact {
-    height: 50vh;
-  }
-}
 
-@media screen and (max-width: 699px) {
-  svg {
-    width: 24px;
-    height: 24px;
+  .login {
+    width: 55%;
   }
-  .login-register {
-    max-width: 80%;
+  .login div, label, input {
+    margin: 0.5rem;
+    height: 1.5rem;
+    font-size: small;
   }
-  h2 {
-    font-size: 20px;
-  }
-  h3 {
-    font-size: 20px;
-    margin-bottom: 3rem;
-  }
-  p {
-    font-size: 16px;
+  .nav {
+    line-height: 15px;
   }
   
-  .nav {
-    line-height: 15spx;
-  }
-  .navbar {
-    width: 380px;
-    height: 10rem;
-  }
   nav ul {
     width: 80%;
-    flex-direction: column;
+    flex-direction: row;
   }
-  nav ul li {
-    right: auto;
-    font-size: 16px;
-    margin: 5px;
-    padding: 0;
-  }
+  
   nav a.nav-link {
     letter-spacing: 0.15rem;
     font-size: 0.75rem;
     margin: auto;
   }
   
+  .description {
+    margin-top: 6rem;
+  }
   .img-profil {
     flex-direction: column;
   }
   .img-profil img {
-    width: 90%;
+    width: 70%;
+  }
+  .img-profil .profil {
+    width: 40%;
   }
   
   .carousel-container {
@@ -383,6 +385,9 @@ input, textarea {
     font-size: larger;
     font-weight: bolder;
     letter-spacing: 0.15rem;
+  }
+  .services {
+    height: 45vh;
   }
   .contact {
     width: 80%;
@@ -403,6 +408,37 @@ input, textarea {
   .experiences, .services, .contact, .footer {
     margin-top: 4rem;
   }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .login-register {
+    max-width: 80%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+  .experiences p, .description p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 499px) {
+  
+  nav ul {
+    width: 20%;
+    flex-direction: row;
+  }
+  nav ul li {
+    margin: 5px
+  }
+ 
 }
 
 @media screen and (max-width: 329px) {
@@ -422,3 +458,39 @@ input, textarea {
   }
 }
 
+@media screen and (min-width: 1199px) {
+  h2 {
+    font-size: 32px;
+  }
+  .login input, .login {
+    font-size: 18px;
+  }
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 824px;
+    height: 824px;
+    margin: auto;
+  }
+  .carousel .slide .legend {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+  .carousel.carousel-slider .control-arrow {
+    width: 5rem;
+    opacity: 0.9;
+  }
+  .carousel-img {
+    border: 2px solid wheat;
+  }
+  .legend {
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 0.20rem;
+  }
+  .contact {
+    margin-top: 10%;
+  }
+}
