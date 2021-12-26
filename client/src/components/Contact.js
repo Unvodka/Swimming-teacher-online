@@ -1,6 +1,7 @@
 import React from "react";
 import{ init } from 'emailjs-com';
 import { useState } from "react";
+import './Contact.css';
 
 init("user_j0DBFik1bsTzzxgRJJoNa");
 
@@ -93,7 +94,7 @@ const ContactMe = () => {
 
   return (
     <form id="contactId"className="contact">
-      <h2>- - - - -  Contact  - - - - -</h2><br/>
+      <h2> - -  Contact - - </h2><br/>
       <div className="form-content">
         <input
           type="text"

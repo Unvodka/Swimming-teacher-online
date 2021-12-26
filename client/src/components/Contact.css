@@ -1,0 +1,93 @@
+.contact {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 45%;
+  margin-top: 7%;
+  margin-left: 27.5%;
+  margin-bottom: 4%;
+  border: 2px solid black;
+}
+.contact input {
+  background-color: rgb(224, 208, 182);
+  height: 2rem;
+  border: none;
+
+  border-bottom: 2px solid black;
+  border-radius: 3px;
+}
+#email {
+  width: 60%;
+}
+.contact h2 {
+  margin-top: 3.5%;
+  margin-bottom: 2.5%;
+}
+.contact textarea {
+  height: 5rem;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 3px;
+  background-color: rgb(224, 208, 182);
+  padding-top: 1rem;
+}
+.contact .button {
+  margin: 4% auto;
+  width: 40%;
+  height: 3rem;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.contact .button:hover {
+  background-color: black;
+  color: wheat;
+  border: 2px solid wheat;
+
+}
+.contactP {
+  margin-bottom: 2rem;
+  margin-left: 10%;
+  width: 80%;
+}
+
+
+.contact .button:hover {
+  transform: scale(1.1);
+}
+
+#not-mail {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact {
+    width: 80%;
+    height: 60vh;
+    margin-left: 10%;
+  }
+  .contact input, .contact .button {
+    margin: 0.75rem;
+  }
+  .contact .button {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .contact {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .contact {
+    margin-top: 0;
+    height: 70vh;
+  }
+  .contact h2 {
+    margin-top: 1rem;
+  }
+}

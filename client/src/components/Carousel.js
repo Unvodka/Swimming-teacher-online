@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 class MyCarousel extends Component {
     render() {
         return (
-            <Carousel className="carousel-container">
+            <Carousel className="carousel-container" infiniteLoop="true">
                 <div className="carousel-img">
                     <img src="/nutrition.jpg" alt="vegetables"/>
                     <p className="legend">Nutrition</p>

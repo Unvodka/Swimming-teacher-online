@@ -1,0 +1,58 @@
+.experiences {
+  margin-top: 3%;
+  width: 80%;
+  margin-left: 10%;
+  transition: 3s ease;
+}
+.experiences p {
+  margin: 1rem;
+  font-size: 21px;
+  line-height: 35px;
+}
+.experiences h2 {
+  margin-bottom: 2.5%;
+}
+.experiences h3 {
+  font-size: 24px;
+  width: 50%;
+  margin: auto;
+}
+.text-container {
+  width: 80%;
+  margin-left: 10%;
+  background-color: black;
+  padding: 20px 5%;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+.experiences a {
+  background-color: black;
+  color: wheat;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1199px) {
+  
+}
+
+@media screen and (max-width: 779px) {
+  .experiences {
+    width: 100%;
+    margin-left: 0;
+  }
+  .text-container {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px 2.5%;
+  }
+  .experiences a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .experiences {
+    margin-left: 0;
+    width: 100%;
+  }
+}

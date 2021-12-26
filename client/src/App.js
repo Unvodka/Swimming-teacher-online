@@ -4,7 +4,7 @@ import Login from './components/login/Login';
 import Register from './components/login/Register';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Experiences from './components/Resume';
+import Experiences from './components/Experiences';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import './Login-register.css'
 
 const Login = () => {
 
@@ -46,10 +47,10 @@ const Login = () => {
                   <i class="fas fa-key"></i><input type="password" name="password" value={user.password} onChange={onChangeInput} className="form-control" id="exampleInputPassword1" placeholder="Password" ></input>
                 </div>
                 <button className="btn-form" type="submit">Login</button>
+                <p>or</p>
                 <Link to="/register"><button className="btn-form">Register</button></Link>
           </fieldset>
         </form>
-        <img className="login-register" src="/swimmer.jpg" alt="swimmer" />
     </div>
   )
 }

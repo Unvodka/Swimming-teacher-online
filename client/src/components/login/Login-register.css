@@ -1,0 +1,38 @@
+body {
+  background: url('../../img/background-login1.jpg') no-repeat !important;
+}
+.login div, label, input {
+  margin: 0.5rem;
+  height: 2rem;
+  font-size: larger;
+}
+
+.login {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .login {
+    width: 55%;
+  }
+  .login div, label, input {
+    margin: 0.5rem;
+    height: 1.5rem;
+    font-size: small;
+  }
+  .login-register {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  
+}
+
+@media screen and (max-width: 349px) {
+  
+}

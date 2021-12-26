@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import './Login-register.css'
+
 
 const Register = () => {
     const [user, setUser] = useState({
@@ -50,7 +52,6 @@ const Register = () => {
 
           </fieldset>
         </form>
-        <img className="login-register" src="/swimmer.jpg" alt="swimmer" />
     </div>
     )
 }
