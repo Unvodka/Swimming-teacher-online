@@ -8,7 +8,6 @@ html .sr .description {
 }
 .App {
   overflow: hidden;
-  min-height: 100vh;
 }
 p {
   font-size: larger;
@@ -47,6 +46,8 @@ body {
   background-size: cover !important;
   text-align: center;
   color: rgb(224, 208, 182);
+  min-height: 100vh;
+
 }
 
 textarea {

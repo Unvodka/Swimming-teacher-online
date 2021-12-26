@@ -38,7 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 4s ease-in;
+  transition: 2s ease-in;
 }
 .img-profil img {
   margin: 2.5%;

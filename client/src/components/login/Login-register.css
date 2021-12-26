@@ -1,6 +1,9 @@
 body {
   background: url('../../img/background-login1.jpg') no-repeat !important;
 }
+legend {
+  color: black;
+}
 .login div, label, input {
   margin: 0.5rem;
   height: 2rem;
@@ -12,7 +15,47 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin: 2rem auto;
+}
+.link-to {
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3.3rem auto;
+  padding-left: 10%;
+  background-color: black;
+  border-radius: 15px;
+  border: 1px solid wheat;
+}
+.link-to p {
+  margin: 2rem;
+}
+.link-to-column {
+  width: 50%;
+  height: 26vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 1rem auto;
+  background-color: black;
+  border-radius: 15px;
+  border: 1px solid wheat;
+}
+.link-to-column p {
+  margin: 0.5rem;
+}
+.btn-form {
+  width: 150px !important;
+  transition: 1s ease;
+  border-radius: 7.5px;
+}
+.btn-form:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1199px) {
