@@ -4,6 +4,7 @@ body {
 legend {
   color: black;
 }
+
 .login div, label, input {
   margin: 0.5rem;
   height: 2rem;

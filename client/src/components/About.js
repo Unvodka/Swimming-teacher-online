@@ -1,6 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
+import Bounce from 'react-reveal/Bounce';
 import './About.css';
 
 
@@ -18,13 +18,13 @@ const About = () => {
                 <p>Before 2016 i was employed at MacDonald, I worked for 4 years in there when i was a young pal. That was a really good experience and training, but i decided to change my activity because it was not my career path i would say. Then i started rescue training and then swimming.</p>
                 <br/>
                 </Fade>
-                <Slide right big cascade>
+                <Bounce right big cascade>
                 <div className="img-profil">
                     <img src="/butterfly.jpg" alt="swimmer" width="30%" height="20%"/>
                     <img className="profil" src="/profil.jpg" alt="profil" width="300px"/>
                     <img src="/swim.jpg" alt="swimmer" width="30%" height="25%"/> 
                 </div>
-                </Slide>
+                </Bounce>
         </div>
     )
 }
