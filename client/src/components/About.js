@@ -10,7 +10,7 @@ const About = () => {
         
         <div id="aboutId" className="about">
                 
-                <Fade top cascade><a href="#contactId"><h1>Your Swim'in Teacher Online</h1></a><br/>
+                <Fade distance={"100vh"} duration={2000} top cascade><a href="#contactId"><h1>Your Swim'in Teacher Online</h1></a><br/>
            
 
                 <h2> - -  About me - - </h2>
