@@ -2,7 +2,11 @@ body {
   background: url('../../img/background-login1.jpg') no-repeat !important;
 }
 legend {
-  color: black;
+  color: whitesmoke;
+  padding: 5px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 2px;
+  border: 1px solid whitesmoke
 }
 
 .login div, label, input {
@@ -16,7 +20,7 @@ legend {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 .link-to {
   width: 50%;
@@ -74,7 +78,20 @@ legend {
 }
 
 @media screen and (max-width: 779px) {
-  
+  .login {
+    width: 90%;
+    margin-top: 5rem;
+    height: 40vh;
+  }
+  legend {
+    color: whitesmoke;
+  }
+  .link-to-column {
+    width: 80%;
+  }
+  .link-to-column p {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 349px) {

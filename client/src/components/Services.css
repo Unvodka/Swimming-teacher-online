@@ -28,6 +28,9 @@
   width: 5rem;
   opacity: 0.9;
 }
+.carousel.carousel-slider {
+  border-radius: 5px;
+}
 .carousel-img {
   border: 2px solid wheat;
 }

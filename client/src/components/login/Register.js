@@ -5,7 +5,6 @@ import './Login-register.css'
 import Slide from 'react-reveal/Slide';
 
 
-
 const Register = () => {
     const [user, setUser] = useState({
         name:'', email:'', password: ''
@@ -26,10 +25,6 @@ const Register = () => {
         } catch (err) {
             alert(err.response.data.msg)
         }
-    }
-
-    function toggleForm () {
-
     }
 
     return (
@@ -65,7 +60,7 @@ const Register = () => {
           <div className='link-to'>
             <p>OR</p>
             <p>Click here to go as visitor</p>
-            <button className='btn-form'>ENTER</button>
+            <Link to="/home"><button className='btn-form'>ENTER</button></Link>
           </div>
         </Slide>
         

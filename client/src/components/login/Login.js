@@ -25,6 +25,9 @@ const Login = () => {
 
             localStorage.setItem('firstLogin', true)
             localStorage.setItem('accessToken', res.data.accesstoken)
+            localStorage.setItem('user-info', user.email)
+            
+            sessionStorage.setItem('activeSession', 'true')
 
             window.location.href = "/home";
         } catch (err) {

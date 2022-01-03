@@ -2,7 +2,7 @@ import axios from "axios"
 
 let BASE_URL = `https://www.swimin-teacher.com`
 
-if(process.env.NODE_ENV === 'dev') {
+if(process.env.NODE_ENV !== 'production') {
   BASE_URL = `http://localhost:4005`
 }
 

@@ -7,7 +7,7 @@ const Experiences = () => {
 
     return ( 
         <div id="experiencesId" className="experiences">
-            <Fade bottom cascade>
+            <Fade duration={500} top cascade>
                 <h2> - -  Experiences  - - </h2><br/>
                
                <div className='text-container'>

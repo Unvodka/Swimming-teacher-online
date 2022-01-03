@@ -7,11 +7,15 @@ const userCtrl = {
         try {
             const {name, email, password} = req.body;
 
+            //Connection conditions
             const user = await Users.findOne({email})
             if(user) return res.status(400).json({msg: "This email already exists."})
 
             if(password.length < 6) 
                 return res.status(400).json({msg: "Your password must be at least 6 characters long."})
+            
+            if(password === name)
+                return res.status(400).json({msg: "Password can't be same as your name, please try again"})
 
             // Password Encryption
             const passwordHash = await bcrypt.hash(password, 10)
