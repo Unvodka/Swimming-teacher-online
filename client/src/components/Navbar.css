@@ -52,6 +52,7 @@ nav a.nav-link {
 .nav-item > a:hover {
   border-top: 0.18rem solid rgb(94, 94, 209);
   transform: scale(1.1);
+  color: rgb(248, 207, 132) !important;
 }
 
 nav ul li {
