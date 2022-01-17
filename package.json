@@ -1,13 +1,13 @@
 {
-  "name": "swimming-teacher.online",
+  "name": "swimming-teacher-online",
   "version": "1.0.0",
   "main": "server.js",
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Unvodka/Swimming-teacher.online/issues"
+    "url": "https://github.com/Unvodka/Swimming-teacher-online/issues"
   },
-  "homepage": "https://github.com/Unvodka/Swimming-teacher.online#readme",
+  "homepage": "https://github.com/Unvodka/Swimming-teacher-online#readme",
   "keywords": [],
   "description": "",
   "dependencies": {
@@ -38,7 +38,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "devStart": "nodemon server.js",
@@ -53,6 +52,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Unvodka/Swimming-teacher.online.git"
+    "url": "git+https://github.com/Unvodka/Swimming-teacher-online.git"
   }
 }

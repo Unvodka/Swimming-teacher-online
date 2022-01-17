@@ -2,9 +2,10 @@ import axios from "axios"
 
 let BASE_URL = `https://www.swimin-teacher.com`
 
-if(process.env.NODE_ENV !== 'production') {
+if(process.env.NODE_ENV === 'dev') {
   BASE_URL = `http://localhost:4005`
 }
+console.log(process.env.NODE_ENV)
 
 export const apiBase = async (method, path, body, config) => {
   

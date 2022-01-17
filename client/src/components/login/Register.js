@@ -46,7 +46,7 @@ const Register = () => {
                     <label htmlFor="password">Password</label>
                     <i class="fas fa-key"></i><input type="password" id="password" name="password" value={user.password} onChange={onChangeInput} placeholder="Password" required></input>
                   </div>
-                  <button className="btn-form">REGISTER</button>
+                  <button className="btn-form submit">REGISTER</button>
                   
                   <p>or</p>
                 

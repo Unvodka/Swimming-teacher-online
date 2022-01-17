@@ -38,20 +38,20 @@ const Login = () => {
   return (
     <div>
       <Slide duration={500} right opposite>
-        <form onSubmit={loginSubmit}>
+        <form onSubmit={loginSubmit} className='login-register'>
             <fieldset className='login'>
               <legend>Login or Register</legend>
 
                   <div className="form-group">
-                    <label htmlFor="exampleInputEmail1" className="form-label mt-4">Email address</label>
+                    <label htmlFor="email">Email address</label>
                     <i class="far fa-envelope"></i>
                     <input type="email" name="email" value={user.email} onChange={onChangeInput} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ></input>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="exampleInputPassword1" className="form-label mt-4">Password</label>
+                    <label htmlFor="password">Password</label>
                     <i class="fas fa-key"></i><input type="password" name="password" value={user.password} onChange={onChangeInput} className="form-control" id="exampleInputPassword1" placeholder="Password" ></input>
                   </div>
-                  <button className="btn-form" type="submit">LOGIN</button>
+                  <button className="btn-form submit" type="submit">LOGIN</button>
                   <p>or</p>
                   <Link to="/register"><button className="btn-form">Register</button></Link>
             </fieldset>

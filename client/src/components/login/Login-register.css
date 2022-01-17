@@ -94,6 +94,25 @@ legend {
   }
 }
 
-@media screen and (max-width: 349px) {
-  
+@media screen and (max-width: 429px) {
+  .login {
+    height: 50vh;
+    margin-left: 18%;
+  }
+  .submit {
+    margin-top: 50px !important;
+  }
+  .link-to {
+    font-size: 12px;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    padding: 0;
+  }
+  .footer {
+    font-size: 14px;
+  }
+  .fa-key {
+    margin-top: 20px;
+  }
 }
