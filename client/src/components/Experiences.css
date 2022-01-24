@@ -1,12 +1,10 @@
 .experiences {
   margin-top: 3%;
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
   transition: 3s ease;
 }
 .experiences p {
   margin: 1rem;
-  font-size: 21px;
   line-height: 35px;
 }
 .experiences h2 {
@@ -14,16 +12,22 @@
 }
 .experiences h3 {
   font-size: 24px;
-  width: 50%;
   margin: auto;
 }
-.text-container {
-  width: 80%;
-  margin-left: 10%;
-  background-color: black;
+.card-exp {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  width: 60%;
+  margin-left: 20%;
+  font-size: 18px;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  line-height: 35px;
+  background-color: black !important;
+  color: wheat !important;
   padding: 20px 5%;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid wheat;
+  box-shadow: 1px 1px 20px 2px black !important;
 }
 .experiences a {
   background-color: black;
@@ -35,18 +39,20 @@
   
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 799px) {
   .experiences {
     width: 100%;
     margin-left: 0;
   }
-  .text-container {
-    width: 90%;
-    margin-left: 5%;
-    padding: 10px 2.5%;
+  .card-exp {
+    font-size: 16px;
+    margin: 2rem auto;
+  }
+  .card-exp h3 {
+    font-size: 20px;
   }
   .experiences a {
-    font-size: 1rem;
+    font-size: 14px;
   }
 }
 

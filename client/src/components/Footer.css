@@ -24,7 +24,10 @@
   }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 799px) {
+  .footer p {
+    font-size: 14px;
+  }
   .footer-left {
     padding: 5px;
   }

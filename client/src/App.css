@@ -12,15 +12,15 @@ html .sr .description {
 img {
   border-radius: 5px;
 }
-p {
-  font-size: larger;
+#text {
+  font-size: 18px;
   letter-spacing: 2px;
   font-weight: 500;
 }
 h2 {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 h3 {
   margin-bottom: 2%;

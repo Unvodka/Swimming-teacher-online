@@ -2,9 +2,8 @@ nav {
   position: fixed;
   display: flex;
   width: 100%;
-  height: 6rem;
+  height: 7rem;
   z-index: 2;
-  line-height: 25px;
   border-bottom: 1px solid wheat;
 }
 .nav .container {
@@ -63,34 +62,64 @@ nav ul li {
   margin: 0 2.5vw;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1299px) {
   .nav {
     line-height: 15px;
+    height: 7rem;
   }
+  
   nav ul {
     background-color: black;
     width: 80%;
     flex-direction: row;
+    position: relative;
   }
   nav ul li {
     right: auto;
     font-size: 16px;
-    margin: 20px;
+    margin: 10px;
     padding: 0;
   }
   nav a.nav-link {
     letter-spacing: 0.15rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin: auto;
   }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 799px) {
+  nav {
+    height: 7rem;
+  }
   nav ul li {
     margin: 5px;
   }
+  nav ul {
+    left: 0;
+  }
+  #navbarSupportedContent {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  #navbarSupportedContent {
+    margin-top: -1rem;
+  }
+  nav a.nav-link {
+    letter-spacing: 0.10rem;
+    font-size: 0.90rem;
+    margin: auto;
+  }
 }
 
+
 @media screen and (max-width: 349px) {
-  
+  nav {
+    height: 6.5rem ;
+  }
+  nav a.nav-link {
+    letter-spacing: 0.10rem;
+    font-size: 0.60rem;
+    margin: auto;
+  }
 }

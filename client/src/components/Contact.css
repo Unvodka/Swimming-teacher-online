@@ -2,7 +2,6 @@
   color: black;
   display: flex;
   flex-direction: column;
-  height: 60vh;
   width: 45%;
   margin-top: 7%;
   margin-left: 27.5%;
@@ -10,6 +9,10 @@
   border: 1px solid black;
   border-radius: 5px;
   background-color: rgb(247, 227, 191);
+  box-shadow: 1px 1px 20px 2px black !important;
+}
+.contact h2 {
+  color: black !important;
 }
 .contact input {
   background-color: whitesmoke;
@@ -25,6 +28,7 @@
 .contact h2 {
   margin-top: 3.5%;
   margin-bottom: 2.5%;
+  color: wheat;
 }
 .contact textarea {
   height: 5rem;
@@ -68,7 +72,6 @@
 @media screen and (max-width: 1199px) {
   .contact {
     width: 80%;
-    height: 60vh;
     margin-left: 10%;
   }
   .contact input, .contact .button {
@@ -79,13 +82,15 @@
   }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 799px) {
   .contact {
-    height: 70vh;
     border: 1px solid wheat;
   }
   .contact input {
     height: 1.5rem;
+  }
+  .contactP {
+    font-size: 14px;
   }
   h2 {
     color: wheat;
@@ -95,7 +100,6 @@
 @media screen and (max-width: 349px) {
   .contact {
     margin-top: 0;
-    height: 70vh;
   }
   .contact h2 {
     margin-top: 1rem;

@@ -1,16 +1,17 @@
 .services {
   width: 80%;
   margin-left: 10%;
-  height: 80vh;
   margin-top: 4%;
 }
 .services h2 {
   margin-top: 3%;
   margin-bottom: 2%;
+  font-weight: bold;
 }
 .services img {
   border: 2px solid wheat;
 }
+
 .carousel-container {
   display: flex;
   flex-direction: column;
@@ -19,6 +20,7 @@
   width: 444px;
   height: 444px;
   margin: auto;
+  
 }
 .carousel .slide .legend {
   font-size: 20px;
@@ -87,16 +89,12 @@
     letter-spacing: 0.15rem;
   }
   .services {
-    height: 60vh;
     width: 100%;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 779px) {
-  .services {
-    height: 50vh;
-  }
   .carousel-container {
     display: flex;
     flex-direction: column;
