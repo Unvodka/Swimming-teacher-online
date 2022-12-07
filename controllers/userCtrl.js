@@ -94,8 +94,7 @@ const userCtrl = {
         }
         
     }
- 
- }
+}
 
 
 const createAccessToken = (user) =>{

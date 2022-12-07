@@ -9,7 +9,7 @@ const Experiences = () => {
     return ( 
         <div id="experiencesId" className="experiences">
             <Fade duration={500} top cascade>
-                <h2> - -  Experiences  - - </h2><br/>
+                <h2>Experiences</h2><br/>
 
                 <Card sx={{ minWidth: 275 }} className="card-exp">
                   <CardContent>

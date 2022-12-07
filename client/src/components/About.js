@@ -13,7 +13,7 @@ const About = () => {
         <div id="aboutId" className="about">
                 
               <Fade distance={"70vh"} duration={500} top cascade><a href="#contactId"><h1>Your Swim'in Teacher Online</h1></a><br/>         
-                <h2> - -  About me - - </h2>
+                <h2>About me</h2>
 
                 <Card sx={{ minWidth: 275 }} className="card">
                   <CardContent>
@@ -22,7 +22,7 @@ const About = () => {
                   </CardContent>
                 </Card>
 
-                               <br/>
+                <br/>
                 </Fade>
                 <Bounce right big cascade>
                 <div className="img-profil">

@@ -22,7 +22,6 @@
 .about h2 {
   margin-top: 3.5%;
   margin-bottom: 2.5%;
-  color: wheat;
 }
 .about h1 {
   font-size: 62px;
@@ -30,8 +29,9 @@
   margin-top: 8%;
   margin-bottom: 2%;
   letter-spacing: 0.15rem;
-  color: wheat;
+  color: rgb(234, 170, 51);
   font-weight: 500;
+  text-shadow: 1px 1px 2px black;
 }
 .about h1:hover {
   color: rgb(248, 207, 132);
@@ -45,6 +45,7 @@
 .img-profil img {
   margin: 2.5%;
   border: 2px solid wheat;
+  box-shadow: 1px 1px 15px 4px black;
 }
 
 
@@ -72,15 +73,16 @@
 @media screen and (max-width: 799px) {
   .about {
     margin-top: 30%;
+    font-size: 14px;
   }
   .about h1 {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 40px;
   }
   .about p {
-    line-height: 25px;
+    line-height: 20px;
     letter-spacing:1px;
-    font-size: 16px;
+    font-size: 14px;
     width: 100%;
   }
   .img-profil {

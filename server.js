@@ -16,7 +16,6 @@ app.use('/public', express.static(__dirname + '/public'))
 app.use(cookieParser())
 app.use(cors())
 
-
 // Routes
 app.use('/user', userRouter)
 
@@ -29,8 +28,6 @@ mongoose.connect(URI, {
   if(err) throw err;
   console.log('Connected to mongoose')
 })
-
-
 
 const port = process.env.PORT
 app.listen(port, () => console.log(`Server listening on port: ${port}`))
