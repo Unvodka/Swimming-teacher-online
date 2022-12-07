@@ -3,9 +3,10 @@ body {
 }
 legend {
   color: whitesmoke;
-  padding: 5px;
-  background-color: rgb(59, 59, 59);
-  border-radius: 2px;
+  padding: 0.75rem;
+  letter-spacing: 0.15rem;
+  background-color: rgb(24, 24, 24);
+  border-radius: 10px;
   border: 1px solid whitesmoke
 }
 
@@ -32,7 +33,7 @@ legend {
   align-items: center;
   margin: 3.3rem auto;
   padding-left: 10%;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   border-radius: 15px;
   border: 1px solid wheat;
 }
@@ -47,7 +48,7 @@ legend {
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   border-radius: 15px;
   border: 1px solid wheat;
 }
