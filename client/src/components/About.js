@@ -17,8 +17,9 @@ const About = () => {
 
                 <Card sx={{ minWidth: 275 }} className="card">
                   <CardContent>
-                    Hi my name is Arnaud and i'm a 30 years old swimming teacher, aquafitness instructor and lifeguard since 5 years now. I'm also web developer since 2020. I worked for many different companies and i got lucky to work in many differents places like council pools, fitness centers, SPA and private properties.
-                    Before 2016 i was employed at MacDonald, I worked for 4 years in there when i was a young pal. That was a really good experience and training, but i decided to change my activity because it was not my career path i would say. Then i started rescue training and then swimming.
+                    Hi my name is Arnaud and i'm a 30 years old. I'm a swimming teacher, aquafitness instructor and lifeguard. I'm also web developer since 2020. <br/> First, before 2016 i was employed at MacDonald, I worked for 4 years in there when i was a young pal. Already i was trying different work like cooking or taking orders.
+                    That was a really good experience and training, but i decided to change my activity because it was not my career path i would say. <br/>
+                    Then i started rescue training and then i became a lifeguard and a swimming teacher wich i practice now since 7 years with passion.
                   </CardContent>
                 </Card>
 

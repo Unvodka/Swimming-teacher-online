@@ -7,6 +7,7 @@ import About from './components/About';
 import Experiences from './components/Experiences';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import Booking from './components/Booking';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -18,6 +19,7 @@ function Home() {
       <Experiences />
       <Services />
       <Contact />
+      <Booking />
     </>
   )
 }

@@ -8,6 +8,9 @@
 .logout-dropdown {
   position: absolute;
   left: 5%;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
 }
 .logout {
   color: white;
@@ -26,8 +29,8 @@
   .logout-dropdown {
     display: flex;
     flex-direction: row;
-    top: 70%;
-    left: 30%;
+    top: 60%;
+    left: 37.5%;
   }
 }
 
@@ -40,14 +43,13 @@
   .logout-dropdown {
     flex-direction: row;
     top: 60%;
-    left: 10%
+    left: 17.5%
   }
 }
 
-@media screen and (max-width: 349px) {
+@media screen and (max-width: 399px) {
   .logout-dropdown {
     font-size: 12px;
-    left: 0.75rem;
   }
   .logout {
     font-size: 0.65rem;

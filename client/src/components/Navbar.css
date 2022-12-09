@@ -1,8 +1,9 @@
 nav {
   position: fixed;
   display: flex;
+  justify-content: center;
   width: 100%;
-  height: 4rem;
+  height: 6rem;
   z-index: 2;
   border-bottom: 1px solid wheat;
 }
@@ -17,14 +18,13 @@ nav {
   flex-direction: row;
   max-width: 100%;
   text-decoration: none;
-  align-items: center;
 }
 
 #navbarSupportedContent {
   max-width: 100%;
-  margin: 0 auto;
+  margin: auto;
+  margin-left: 35%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .navbar-nav {
@@ -65,6 +65,11 @@ nav ul li {
     line-height: 15px;
     height: 7rem;
   }
+
+  #navbarSupportedContent {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
   
   nav ul {
     background-color: black;
@@ -94,15 +99,14 @@ nav ul li {
   }
   nav ul {
     left: 0;
+    top: 0px;
   }
   #navbarSupportedContent {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 @media screen and (max-width: 499px) {
-  #navbarSupportedContent {
-    margin-top: -1rem;
-  }
+  
   nav a.nav-link {
     letter-spacing: 0.10rem;
     font-size: 0.90rem;
@@ -111,7 +115,7 @@ nav ul li {
 }
 
 
-@media screen and (max-width: 349px) {
+@media screen and (max-width: 399px) {
   nav {
     height: 6.5rem ;
   }
