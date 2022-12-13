@@ -6,7 +6,6 @@ function Booking() {
     return (
         <div className="booking">
             {localStorage.getItem('activeSession')} Booking
-            
         </div>
     )
 }

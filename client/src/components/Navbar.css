@@ -10,7 +10,10 @@ nav {
 .nav .container {
   width: 100%;
 }
-
+.logo {
+  color: antiquewhite;
+  z-index: 16;
+}
 .navbar {
   color: wheat;
   background-color: black;
@@ -23,7 +26,7 @@ nav {
 #navbarSupportedContent {
   max-width: 100%;
   margin: auto;
-  margin-left: 35%;
+  margin-left: 25%;
   display: flex;
   justify-content: center;
 }
@@ -102,7 +105,7 @@ nav ul li {
     top: 0px;
   }
   #navbarSupportedContent {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 499px) {

@@ -34,7 +34,7 @@ h3 {
   font-size: larger;
 }
 .booking {
-  margin-bottom: 3rem;
+  margin: 3rem auto;
 }
 .btn-form {
   align-items: center;

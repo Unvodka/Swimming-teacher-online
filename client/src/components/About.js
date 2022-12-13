@@ -1,18 +1,16 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 import './About.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 
 const About = () => {
-
+    
     return (
         
         <div id="aboutId" className="about">
                 
-              <Fade distance={"70vh"} duration={500} top cascade><a href="#contactId"><h1>Your Swim'in Teacher Online</h1></a><br/>         
+              <a href="#contactId"><h1>Your Swim'in Teacher Online</h1></a><br/>         
                 <h2>About me</h2>
 
                 <Card sx={{ minWidth: 275 }} className="card">
@@ -22,16 +20,13 @@ const About = () => {
                     Then i started rescue training and then i became a lifeguard and a swimming teacher wich i practice now since 7 years with passion.
                   </CardContent>
                 </Card>
-
                 <br/>
-                </Fade>
-                <Bounce right big cascade>
+              
                 <div className="img-profil">
                     <img src="/butterfly.jpg" alt="swimmer" width="30%" height="20%"/>
                     <img className="profil" src="/profil.jpg" alt="profil" width="300px"/>
                     <img src="/swim.jpg" alt="swimmer" width="30%" height="25%"/> 
                 </div>
-                </Bounce>
         </div>
     )
 }

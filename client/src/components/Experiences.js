@@ -1,5 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import './Experiences.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -8,7 +7,6 @@ const Experiences = () => {
 
     return ( 
         <div id="experiencesId" className="experiences">
-            <Fade duration={500} top cascade>
                 <h2>Experiences</h2><br/>
 
                 <Card sx={{ minWidth: 275 }} className="card-exp">
@@ -31,7 +29,6 @@ const Experiences = () => {
                     </CardContent>
                 </Card>
                 
-            </Fade>
         </div>
     )
 }
