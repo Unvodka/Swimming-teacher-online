@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-class MyCarousel extends Component {
-    render() {
+function MyCarousel () {
+    
         return (
             <Carousel className="carousel-container" infiniteLoop="true">
                 <div className="carousel-img">
-                    <img src="/nutrition.jpg" alt="vegetables"/>
+                    <img src="/nutrition2.jpg" alt="vegetables"/>
                     <p className="legend">Nutrition</p>
                 </div>
                 <div className="carousel-img">
@@ -34,6 +34,6 @@ class MyCarousel extends Component {
             </Carousel>
         );
     }
-};
- 
- export default MyCarousel
+
+
+export default MyCarousel

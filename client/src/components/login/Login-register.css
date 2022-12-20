@@ -13,26 +13,25 @@ legend {
 .login div, label, input {
   margin: 0.5rem;
   height: 2rem;
-  font-size: larger;
 }
 
 .login {
-  width: 35%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin: 3rem auto;
+  margin: 2.4rem auto;
 }
+
 .link-to {
   width: 50%;
-  height: 20vh;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 3.3rem auto;
-  padding-left: 10%;
   background-color: rgb(24, 24, 24);
   border-radius: 15px;
   border: 1px solid wheat;
@@ -42,12 +41,12 @@ legend {
 }
 .link-to-column {
   width: 50%;
-  height: 26vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto;
+  margin: 2rem auto;
   background-color: rgb(24, 24, 24);
   border-radius: 15px;
   border: 1px solid wheat;
@@ -59,9 +58,13 @@ legend {
   width: 150px !important;
   transition: 1s ease;
   border-radius: 7.5px;
+  margin: 0.5rem auto;
 }
 .btn-form:hover {
   transform: scale(1.1);
+}
+.footer {
+  margin-top: 4rem;
 }
 
 @media screen and (max-width: 1199px) {
@@ -74,7 +77,7 @@ legend {
     font-size: small;
   }
   .login-register {
-    max-width: 80%;
+    max-width: 100%;
   }
 }
 
@@ -98,17 +101,20 @@ legend {
 @media screen and (max-width: 429px) {
   .login {
     height: 50vh;
-    margin-left: 18%;
   }
   .submit {
     margin-top: 50px !important;
   }
   .link-to {
     font-size: 12px;
-    flex-direction: column;
     width: 95%;
+    flex-direction: column;
+    height: fit-content;
     margin: auto;
     padding: 0;
+  }
+  .link-to p {
+    margin: 0.5rem;
   }
   .footer {
     font-size: 14px;
@@ -120,3 +126,4 @@ legend {
     display: none;
   }
 }
+

@@ -24,7 +24,7 @@
   line-height: 35px;
   background-color: black !important;
   color: wheat !important;
-  padding: 20px 5%;
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid wheat;
   box-shadow: 1px 1px 20px 2px black !important;
@@ -45,14 +45,17 @@
     margin-left: 0;
   }
   .card-exp {
-    font-size: 16px;
+    width: 90%;
+    font-size: 14px;
     margin: 2rem auto;
+    letter-spacing: 1px;
+    line-height: 25px;
   }
   .card-exp h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .experiences a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 

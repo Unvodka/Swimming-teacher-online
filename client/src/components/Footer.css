@@ -1,12 +1,15 @@
 .footer {
   background-color: rgb(24, 24, 24);
   color: wheat;
-  height: 12rem;
+  height: 10rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   border-top: 1px solid wheat;
   line-height: 35px;
+}
+.footer-left {
+  margin-top: 10px;
 }
 .footer-center p {
   margin: 1rem;
@@ -15,10 +18,16 @@
   color: wheat;
 }
 
+@media screen and (min-width: 1000px) {
+  .login {
+    margin: 2.8rem auto;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer {
     padding: 5px;
-    height: 13rem;
+    height: 12rem;
     flex-direction: column;
     line-height: 20px;
   }
@@ -35,4 +44,8 @@
 
 @media screen and (max-width: 349px) {
   
+}
+
+.icon {
+  margin: 5px;
 }
