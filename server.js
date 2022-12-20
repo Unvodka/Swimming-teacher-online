@@ -19,6 +19,33 @@ app.use(cors())
 // Routes
 app.use('/user', userRouter)
 
+// Stripe 
+const stripe = require('stripe')(process.env.TEST_STRIPE_PRIVATE_KEY)
+
+app.post("/checkout", async (req, res) => {
+  const items = req.body.items;
+  let lineItems = [];
+  items.forEach((item)=> {
+      lineItems.push(
+          {
+              price: item.id,
+              quantity: item.quantity
+          }
+      )
+  });
+
+  const session = await stripe.checkout.sessions.create({
+      line_items: lineItems,
+      mode: 'payment',
+      success_url: "http://localhost:3000/success",
+      cancel_url: "http://localhost:3000/cancel"
+  });
+
+  res.send(JSON.stringify({
+      url: session.url
+  }));
+});
+
 // Database connection 
 const URI = process.env.DB_CONNECT;
 

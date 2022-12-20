@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import './Login-register.css'
-import Slide from 'react-reveal/Slide';
-
 
 const Login = () => {
 
@@ -37,7 +35,6 @@ const Login = () => {
   
   return (
     <div>
-      <Slide duration={500} right opposite>
         <form onSubmit={loginSubmit} className='login-register'>
             <fieldset className='login register'>
               <legend>Login or Register</legend>
@@ -56,9 +53,7 @@ const Login = () => {
                   <Link to="/register"><button className="btn-form">Register</button></Link>
             </fieldset>
         </form>
-      </Slide>
         
-      <Slide duration={500} left opposite>
         <div className='link-to-column'>
           <div>
             <p>Almost there</p>
@@ -70,8 +65,6 @@ const Login = () => {
             <button className='btn-form'>OR HERE</button>
           </div>
           </div>           
-      </Slide>
-        
         
     </div>
   )

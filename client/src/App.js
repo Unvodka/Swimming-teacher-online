@@ -7,20 +7,25 @@ import About from './components/About';
 import Experiences from './components/Experiences';
 import Services from './components/Services';
 import Contact from './components/Contact';
-import Booking from './components/Booking';
 import Footer from './components/Footer';
+import Cancel from './pages/Cancel';
+import Store from './pages/Store';
+import Success from './pages/Success';
+import CartProvider from './CartContext';
+
 import './App.css';
 
 function Home() {
   return (
-    <>
-      <Navbar />
-      <About />
-      <Experiences />
-      <Services />
-      <Contact />
-      <Booking />
-    </>
+    <CartProvider>
+        <Navbar />
+        <About />
+        <Experiences />
+        <Services />
+        <Contact />
+        <Store />
+    </CartProvider>
+        
   )
 }
 
@@ -36,6 +41,8 @@ function App() {
               <Route path="/login" element={<Login />} />
                 
               <Route path="/register" element={<Register />} />
+              <Route path="success" element={<Success />} />
+              <Route path="cancel" element={<Cancel />} />
                 
               <Route path="/home" element={<Home />} />
             </Routes>

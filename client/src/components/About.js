@@ -13,7 +13,7 @@ const About = () => {
               <a href="#contactId"><h1>Your Swim'in Teacher Online</h1></a><br/>         
                 <h2>About me</h2>
 
-                <Card sx={{ minWidth: 275 }} className="card">
+                <Card sx={{ minWidth: 275 }} className="about-card">
                   <CardContent>
                     Hi my name is Arnaud and i'm a 30 years old. I'm a swimming teacher, aquafitness instructor and lifeguard. I'm also web developer since 2020. <br/> First, before 2016 i was employed at MacDonald, I worked for 4 years in there when i was a young pal. Already i was trying different work like cooking or taking orders.
                     That was a really good experience and training, but i decided to change my activity because it was not my career path i would say. <br/>
