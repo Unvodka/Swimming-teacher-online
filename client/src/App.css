@@ -13,6 +13,10 @@ html .sr .description {
   justify-content: space-between;
   min-height: 100vh;
 }
+.store {
+  margin: 2rem auto 0 auto;
+  width: 100%;
+}
 .Success-Cancel {
   margin-top: 10rem;
   color: wheat;
@@ -26,8 +30,9 @@ html .sr .description {
 }
 .navbar {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 7rem;
   position: fixed;
@@ -35,12 +40,34 @@ html .sr .description {
   color: wheat;
   border-bottom: 1px solid wheat;
   z-index: 16;
+  padding: 0 5%;
 }
 .navbar a {
+  display: flex;
+  flex-direction: row;
   font-size: larger;
   letter-spacing: 1px;
   color: wheat;
-  margin: 5px;
+  text-decoration: none;
+  margin: 1vw 3vw;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-shadow: 2px 2px 5px antiquewhite;
+  transform: scale(1.1);
+  
+}
+.minimize {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: smaller;
+}
+.logo {
+  border-bottom: 1px solid wheat;
+  margin: 0 !important;
+}
+.list {
+  display: flex;
+  flex-direction: row;
 }
 
 img {
@@ -58,7 +85,7 @@ h2 {
 }
 body h2 {
   color: rgb(234, 170, 51);
-  text-shadow: 1px 1px 3px rgb(3, 3, 3);
+  text-shadow: 2px 2px 3px rgb(3, 3, 3);
 
 }
 h3 {
@@ -82,7 +109,7 @@ h3 {
 }
 .card {
   width: 220px;
-  margin: 1rem;
+  margin: 2rem;
   background-color: black !important;
   color: wheat !important;
   border: 1px solid wheat;
@@ -100,8 +127,9 @@ h3 {
 }
 .g-4 {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 button {
   padding: 0.35rem;
@@ -188,6 +216,13 @@ input, textarea {
 
 
 @media screen and (max-width: 999px) {
+  .navbar {
+    font-size: smaller;
+    justify-content: space-evenly;
+  }
+  .navbar .list {
+    display: none;
+  }
   .experiences, .contact {
     margin-top: 2rem;
   }
@@ -218,5 +253,11 @@ input, textarea {
   }
   .login input, .login {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .g-4 {
+    flex-direction: column;
   }
 }

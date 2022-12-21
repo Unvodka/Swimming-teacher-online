@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard';
 function Store() {
 
     return (
-        <>
+        <div className='store'>
             <h2 align="center" className="p-3">Welcome to the store !</h2>
             <Row xs={1} md={3} className="g-4">
                 {productsArray.map((product, idx) => (
@@ -14,7 +14,7 @@ function Store() {
                     </Col>
                 ))}
             </Row>
-        </>
+        </div>
     )
 }
 

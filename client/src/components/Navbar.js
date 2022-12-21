@@ -31,13 +31,19 @@ function NavbarComponent() {
     return (
         <>
             <Navbar expand="sm" className='navbar'>
-                <Navbar.Brand href="/home">SWIMIN'TEACHER.COM</Navbar.Brand>
+                <Navbar.Brand href="/home" className='logo'>Swimin'Teacher.com</Navbar.Brand>
+                <div className='list'>
+                    <a href='#aboutId'>About</a>
+                    <a href='#experiencesId'>Experiences</a>
+                    <a href='#servicesId'>Services</a>
+                    <a href='#contactId'>Contact</a>
+                </div>
                 <Navbar.Collapse className="justify-content-end">
-                    <Button onClick={handleShow}>Cart ({productsCount} Items)</Button>
+                    <Button onClick={handleShow} className='cart-btn'>Cart ({productsCount} Items)</Button>
                 </Navbar.Collapse>
             </Navbar>
             <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
+                <Modal.Header closeButton onClick={handleClose}>
                     <Modal.Title>Shopping Cart</Modal.Title>
                     Minimize here
                 </Modal.Header>
@@ -48,9 +54,7 @@ function NavbarComponent() {
                             {cart.items.map( (currentProduct, idx) => (
                                 <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
                             ))}
-
                             <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
-
                             <Button variant="success" onClick={checkout}>
                                 Purchase items!
                             </Button>

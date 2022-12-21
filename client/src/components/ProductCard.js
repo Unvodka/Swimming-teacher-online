@@ -10,8 +10,7 @@ function ProductCard(props) { // props.product is the product we are selling
     return (
         <Card>
             <Card.Body>
-                <Card.Title>{product.title}</Card.Title>
-                <Card.Text>${product.price}</Card.Text>
+                <Card.Text>{product.title} is {product.price}€</Card.Text>
                 { productQuantity > 0 ?
                     <>
                         <Form as={Row}>

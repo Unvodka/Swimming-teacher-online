@@ -1,7 +1,5 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Login from './components/login/Login';
-import Register from './components/login/Register';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Experiences from './components/Experiences';
@@ -22,8 +20,8 @@ function Home() {
         <About />
         <Experiences />
         <Services />
-        <Contact />
         <Store />
+        <Contact />
     </CartProvider>
         
   )
@@ -34,16 +32,9 @@ function App() {
   return (
       <Router>
         <div className="App">
-          
             <Routes>
-              <Route path="/" element={<Register />} />
-                
-              <Route path="/login" element={<Login />} />
-                
-              <Route path="/register" element={<Register />} />
               <Route path="success" element={<Success />} />
               <Route path="cancel" element={<Cancel />} />
-                
               <Route path="/home" element={<Home />} />
             </Routes>
           <Footer />

@@ -3,9 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 60%;
-  margin-left: 20%;
-  margin-bottom: 4%;
-  margin-top: 1rem;
+  margin: 2rem auto;
   border: 1px solid black;
   border-radius: 5px;
   background-color: rgb(250, 232, 200);
@@ -22,6 +20,7 @@
   color: wheat;
   border-bottom: 1px solid black;
   border-radius: 3px;
+  margin: 0.5rem;
 }
 #email {
   width: 60%;
@@ -41,27 +40,25 @@
   padding-top: 1rem;
 }
 .contact .button {
-  color: grey;
+  width: 10vw;
   margin: 4% auto;
-  width: 40%;
   height: 3rem;
+  background-color: rgb(1, 101, 1);
+  color: whitesmoke;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 5px;
 }
 .contact .button:hover {
-  background-color: black;
-  color: wheat;
-  border: 2px solid white;
-
+  background-color: antiquewhite;
+  color: rgb(1, 101, 1);
+  border: 2px solid rgb(1, 101, 1);
 }
 .contactP {
   margin-bottom: 2rem;
   margin-left: 10%;
   width: 80%;
 }
-
-
 .contact .button:hover {
   transform: scale(1.1);
 }
@@ -75,9 +72,6 @@
     width: 80%;
     margin-left: 10%;
   }
-  .contact input, .contact .button {
-    margin: 0.75rem;
-  }
   .contact .button {
     margin-left: 30%;
   }
@@ -86,8 +80,6 @@
 @media screen and (max-width: 799px) {
   .contact {
     border: 1px solid wheat;
-    width: 90%;
-    margin: auto;
   }
   .contact input {
     height: 1.5rem;
